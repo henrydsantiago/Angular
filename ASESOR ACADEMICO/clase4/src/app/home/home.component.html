@@ -1,0 +1,11 @@
+<div>
+  <div *ngFor="let p of peliculas">
+    <a [routerLink]="['/detalle', p.id, '1','5']">{{p.nombre}}</a>
+  </div>
+</div>
+
+<div *ngFor="let api of peliculasAPI">
+  <h5>{{api.Title}}</h5>
+  <img [src]="api.Poster" width="100" height="100" alt="">
+
+</div>

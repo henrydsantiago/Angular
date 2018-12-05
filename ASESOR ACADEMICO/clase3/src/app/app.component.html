@@ -1,0 +1,71 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<nav>
+  <h1>
+    Esto es un nav
+  </h1>
+  <button [routerLink]="['/login']" >Login</button>
+  <button [routerLink]="['/registro']" >Registro</button>
+</nav>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+<!-- USO DEL NGFORM -->
+<!-- <form action="" #formulario="ngForm" >
+  <input type="email" name="nombreHtml" id="nombreHtml2"
+  #nombreHtml="ngModel"
+    [(ngModel)]="nombre"
+    required
+    minlength="8"
+    email
+  >
+  <input type="text"  name="apellidoHtml" id="apellidoHtml"
+  #apellidoHtml="ngModel"
+    [(ngModel)]="apellido"
+    required
+    minlength="2"
+    maxlength="12"
+  >
+
+
+  <br>
+  <button [disabled]="!formulario.valid" >Enviar</button>
+
+
+
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- USO DEL NGMODEL -->
+<!-- <div>
+  <input type="email" 
+  #nombreHtml="ngModel"
+    [(ngModel)]="nombre"
+    required
+    minlength="8"
+    email
+  >
+  <br>
+  <button [disabled]="nombreHtml.invalid" >Enviar</button>
+  <button [disabled]="nombreHtml.touched" >Cancelar</button>
+  <button [disabled]="nombreHtml.dirty" >Cancelar</button>
+</div>
+
+<h1>{{nombre}}</h1> -->
+
